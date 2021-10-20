@@ -1,10 +1,11 @@
 function my_display_alpha(current){
-    while (current < 90)
+    while (current > 65)
     {
         process.stdout.write(String.fromCharCode(current));
-        current++;
+        current--;
     }
-    console.log(String.fromCharCode(90));
+    console.log(String.fromCharCode(65));
 }
 
-my_display_alpha(65);
+my_display_alpha(90);
+
